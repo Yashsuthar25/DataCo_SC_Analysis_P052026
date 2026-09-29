@@ -1,0 +1,80 @@
+DataCo Logistics Performance Analysis
+Data Preparation – Change Log
+
+Purpose
+-------
+The original DataCo Supply Chain dataset contains information covering customers,
+products, sales, logistics, order fulfillment, and other business areas.
+
+For this project, I am focusing on logistics and order-fulfillment performance,
+with product categories and geographic information used to understand differences
+in delivery performance.
+
+I kept the original CSV file unchanged and created a separate working version.
+The following columns were removed from the working dataset because they were
+not required for the current business task, contained sensitive/personal
+information, or did not provide useful variation.
+
+Removed Columns & Reasons
+-------------------------
+
+1. Email
+   Customer contact information is not required for the logistics analysis.
+
+2. Customer Fname
+   Personal customer information is not relevant to the business questions.
+
+3. Customer Lname
+   Personal customer information is not relevant to the business questions.
+
+4. Customer Password
+   Sensitive customer information and completely unrelated to the analysis.
+
+5. Latitude
+   Detailed coordinate information is not required for the current project scope.
+
+6. Longitude
+   Detailed coordinate information is not required for the current project scope.
+
+7. Product Image
+   Image/reference information does not contribute to the logistics analysis.
+
+8. Product Status
+   This field contains only 0s in the dataset, so it does not provide useful
+   variation for analysis.
+
+9. Product Price
+   Product pricing is outside the current logistics-focused business task.
+
+10. Order Item Product Price
+    Product pricing is outside the current logistics-focused business task.
+
+11. Order Item Discount
+    Discount analysis is outside the current project scope.
+
+12. Order Item Discount Rate
+    Discount analysis is outside the current project scope.
+
+13. Sales per customer
+    Customer-level sales analysis is outside the current project scope.
+
+14. Order Item Profit Ratio
+    Profitability analysis is outside the current project scope.
+
+15. Order Profit Per Order
+    Profitability analysis is outside the current project scope.
+
+Preparation Note
+----------------
+The purpose of removing these fields was not to remove as much data as possible,
+but to create a focused working dataset containing the information needed to
+answer the defined business questions.
+
+The original CSV has been retained separately as the raw/master dataset. If a
+removed field becomes relevant later in the analysis, it can be restored from
+the original file.
+
+Next Step
+---------
+Continue reviewing the remaining columns and document any further changes made
+during the Prepare and Process phases.
